@@ -1,0 +1,26 @@
+.reflectorPanel {
+  margin-top: 20px;
+}
+
+.reflectorDisplay {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.reflectorRow {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  justify-content: center;
+}
+
+.reflectorRow span {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  font-size: 14px;
+}

@@ -1,0 +1,46 @@
+.plugboard {
+  margin-top: 20px;
+}
+
+.alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.connectionInputs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.connectBtn {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connectBtn:hover {
+  background-color: #2980b9;
+}
+
+.connectionList {
+  margin-top: 10px;
+}
