@@ -1,6 +1,6 @@
 import { createContext, useState } from "react";
 const RotorContext = createContext()
-export function Intercept({ children }) {
+export function RotorProvider({ children }) {
     const alphabetStatic = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     const alphabetDynamic = alphabetStatic.split("");
     const [rotors, setRotors] = useState([
@@ -9,17 +9,6 @@ export function Intercept({ children }) {
   { name: "rotorIII", value: alphabetDynamic },
 ]);
 
-    // function setRotorStart(rotor, char) {
-    //     setRotors((prev) => {
-    //         const rotorName = prev[rotor];
-    //         const index = rotorName.indexOf(char.toUpperCase());
-    //         const NowRoutr = [
-    //             ...rotorName.slice(index),
-    //             ...rotorName.slice(0, index),
-    //         ];
-    //         return { ...prev, [rotor]: NowRoutr };
-    //     });
-    // }
       function setRotorStart(rotorName, char) {
     setRotors((prev) =>
       prev.map((rotor) => {
@@ -36,9 +25,6 @@ export function Intercept({ children }) {
       })
     );
   }
-
-
-
     return (
         <RotorContext.Provider
             value={{

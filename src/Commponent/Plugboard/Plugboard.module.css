@@ -42,5 +42,66 @@
 }
 
 .connectionList {
-  margin-top: 10px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.hidden {
+  opacity: 0.3;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.connectionItem {
+  background: linear-gradient(135deg, #2c2f48, #3b3f62);
+  color: #f0f0f0;
+  padding: 8px 14px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.connectionItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #3e4272, #4a508a);
+}
+
+.from {
+  color: #6ee7b7; 
+}
+
+.to {
+  color: #93c5fd;
+}
+
+.arrow {
+  color: #d1d5db; 
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  color: #f87171; /* أحمر ناعم */
+  cursor: pointer;
+  margin-left: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.deleteBtn:hover {
+  background-color: rgba(248, 113, 113, 0.1);
+  color: #ef4444; /* أحمر أغمق */
+  transform: scale(1.1);
 }
