@@ -54,3 +54,9 @@ Mahmoud Amer
 Front-End Developer | 🇪🇬 Egypt
 📧 Contact:[melambodis@gmail.com]
 💬 “Just ambition.”
+
+
+## 🆕 Updates
+- **[2025-10-20]** Added new feature: `PlugboardContext`  
+  Manages letter connections and prevents duplicate pairings in Enigma simulation.
+

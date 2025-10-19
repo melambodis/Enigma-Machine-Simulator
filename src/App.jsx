@@ -1,13 +1,14 @@
 import "./App.css";
 import EnigmaMachine from "./Commponent/EnigmaMachine/EnigmaMachine";
-import { Intercept } from "./usecontext/useLogic";
+import { RotorProvider } from "./usecontext/Rotorsting";
+
 
 function App() {
   return (
     <>
-      <Intercept>
+    <RotorProvider>
         <EnigmaMachine />
-      </Intercept>
+    </RotorProvider>
     </>
   );
 }
